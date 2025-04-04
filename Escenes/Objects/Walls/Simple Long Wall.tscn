@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://1ftmotal1bms"]
+
+[ext_resource type="Texture2D" uid="uid://bd88iwm61jnux" path="res://Primer-Joc/Escenes/Objects/Walls/Wall 1 Texture.png" id="1_piken"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g5j82"]
+
+[node name="Simple Long Wall" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2, 15)
+shape = SubResource("RectangleShape2D_g5j82")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-5.53747e-07, -7.21216e-06)
+scale = Vector2(0.322581, 0.416667)
+texture = ExtResource("1_piken")
+region_enabled = true
+region_rect = Rect2(539, 0, 124, 720)

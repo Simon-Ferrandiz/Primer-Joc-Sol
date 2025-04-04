@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://qyfqcjai7l7t"]
+
+[ext_resource type="Texture2D" uid="uid://dlhmndt5co2gt" path="res://Primer-Joc/Escenes/Objects/Player/Player.webp" id="1_8v1ne"]
+[ext_resource type="Script" uid="uid://dxnuvp0in3gpo" path="res://Primer-Joc/Escenes/Objects/Player/PlayerCode.gd" id="1_qa7gb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hef0x"]
+radius = 24.0
+height = 110.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qa7gb"]
+radius = 11.0
+height = 40.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_qa7gb")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(0, -3)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_8v1ne")
+
+[node name="Player WALL Hitbox" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_hef0x")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Player Hitbox" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -15)
+shape = SubResource("CapsuleShape2D_qa7gb")

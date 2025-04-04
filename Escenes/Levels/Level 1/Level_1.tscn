@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwj3xwgfw2j5"]
+
+[ext_resource type="Texture2D" uid="uid://tpry0gt8ixqq" path="res://Primer-Joc/Escenes/Levels/Level 1/Background.webp" id="1_xdl2q"]
+
+[node name="Level 1" type="Sprite2D"]
+
+[node name="Background (Floor)" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.622478)
+texture = ExtResource("1_xdl2q")

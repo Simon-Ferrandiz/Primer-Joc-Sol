@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://58gpq6rt52xy"]
+
+[ext_resource type="PackedScene" uid="uid://qyfqcjai7l7t" path="res://Primer-Joc/Escenes/Objects/Player/Player.tscn" id="1_h2iuq"]
+[ext_resource type="PackedScene" uid="uid://cwj3xwgfw2j5" path="res://Primer-Joc/Escenes/Levels/Level 1/Level_1.tscn" id="1_hrew1"]
+[ext_resource type="PackedScene" uid="uid://1ftmotal1bms" path="res://Primer-Joc/Escenes/Objects/Walls/Simple Long Wall.tscn" id="3_4o7ka"]
+[ext_resource type="PackedScene" uid="uid://bq0nhcwnvoccs" path="res://Primer-Joc/Escenes/Objects/Enemy/Enemy.tscn" id="3_lpfqe"]
+
+[node name="Joc" type="Node2D"]
+
+[node name="Level 1" parent="." instance=ExtResource("1_hrew1")]
+
+[node name="Player" parent="." instance=ExtResource("1_h2iuq")]
+position = Vector2(50, 75)
+
+[node name="Enemy" parent="." instance=ExtResource("3_lpfqe")]
+position = Vector2(177, 479)
+
+[node name="Simple Long Wall" parent="." instance=ExtResource("3_4o7ka")]
+position = Vector2(121, 150)
+
+[node name="Simple Long Wall2" parent="." instance=ExtResource("3_4o7ka")]
+position = Vector2(251, 280)
+rotation = 1.5708
