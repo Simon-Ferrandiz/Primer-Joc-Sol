@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://qyfqcjai7l7t"]
 
-[ext_resource type="Texture2D" uid="uid://dlhmndt5co2gt" path="res://Primer-Joc/Escenes/Objects/Player/Player.webp" id="1_8v1ne"]
-[ext_resource type="Script" uid="uid://dxnuvp0in3gpo" path="res://Primer-Joc/Escenes/Objects/Player/PlayerCode.gd" id="1_qa7gb"]
+[ext_resource type="Texture2D" uid="uid://dlhmndt5co2gt" path="res://Escenes/Objects/Player/Player.webp" id="1_8v1ne"]
+[ext_resource type="Script" uid="uid://dxnuvp0in3gpo" path="res://Escenes/Objects/Player/PlayerCode.gd" id="1_qa7gb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hef0x"]
 radius = 24.0
@@ -14,7 +14,7 @@ height = 40.0
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_qa7gb")
 
-[node name="Sprite" type="Sprite2D" parent="."]
+[node name="Player Sprite" type="Sprite2D" parent="."]
 position = Vector2(0, -3)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("1_8v1ne")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://1ftmotal1bms"]
 
-[ext_resource type="Texture2D" uid="uid://bd88iwm61jnux" path="res://Primer-Joc/Escenes/Objects/Walls/Wall 1 Texture.png" id="1_piken"]
+[ext_resource type="Texture2D" uid="uid://bd88iwm61jnux" path="res://Escenes/Objects/Walls/Wall 1 Texture.png" id="1_piken"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g5j82"]
 

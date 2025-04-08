@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dut6pksqvf8e3"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_2gckp"]
+b = Vector2(0, 648)
+
+[node name="Limit Wall X" type="StaticBody2D"]
+
+[node name="Limit Wall X Hitbox" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_2gckp")

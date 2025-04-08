@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlhmndt5co2gt"
-path="res://.godot/imported/Player.webp-9c4d4cc0a04a3165654a11e0b9371c49.ctex"
+path="res://.godot/imported/Player.webp-05716850ffd17d8303d3596cd5163835.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Primer-Joc/Escenes/Objects/Player/Player.webp"
-dest_files=["res://.godot/imported/Player.webp-9c4d4cc0a04a3165654a11e0b9371c49.ctex"]
+source_file="res://Escenes/Objects/Player/Player.webp"
+dest_files=["res://.godot/imported/Player.webp-05716850ffd17d8303d3596cd5163835.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwydwtta6p8r6"
-path="res://.godot/imported/Background (Floor).jpg-2cfdbe9ab20ccf73fba688677601a1b1.ctex"
+path="res://.godot/imported/Background (Floor).jpg-15bd6f34d8ce8d3fdccb004e8b635814.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Primer-Joc/Escenes/Levels/Level 1/Background (Floor).jpg"
-dest_files=["res://.godot/imported/Background (Floor).jpg-2cfdbe9ab20ccf73fba688677601a1b1.ctex"]
+source_file="res://Escenes/Levels/Level 1/Background (Floor).jpg"
+dest_files=["res://.godot/imported/Background (Floor).jpg-15bd6f34d8ce8d3fdccb004e8b635814.ctex"]
 
 [params]
 
