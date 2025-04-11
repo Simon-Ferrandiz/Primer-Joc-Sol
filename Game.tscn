@@ -1,22 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://b8c5haldoql1j"]
+[gd_scene load_steps=5 format=3 uid="uid://b8c5haldoql1j"]
 
 [ext_resource type="PackedScene" uid="uid://qyfqcjai7l7t" path="res://Escenes/Objects/Player/Player.tscn" id="1_h2iuq"]
 [ext_resource type="PackedScene" uid="uid://cwj3xwgfw2j5" path="res://Escenes/Levels/Level 1/Level_1.tscn" id="1_hrew1"]
-[ext_resource type="PackedScene" uid="uid://1ftmotal1bms" path="res://Escenes/Objects/Walls/Simple Long Wall.tscn" id="3_4o7ka"]
-[ext_resource type="PackedScene" uid="uid://bw43iy583gpmk" path="res://Escenes/Objects/Enemy/Enemy.tscn" id="3_lpfqe"]
 [ext_resource type="PackedScene" uid="uid://dut6pksqvf8e3" path="res://Escenes/Objects/Walls/Limit Wall X.tscn" id="5_mpygh"]
 [ext_resource type="PackedScene" uid="uid://d3jmglwhvt1bs" path="res://Escenes/Objects/Walls/Limit Wall Y.tscn" id="6_sopbf"]
 
 [node name="Joc" type="Node2D"]
 
 [node name="Level 1" parent="." instance=ExtResource("1_hrew1")]
-
-[node name="Simple Long Wall" parent="Level 1" instance=ExtResource("3_4o7ka")]
-position = Vector2(121, 150)
-
-[node name="Simple Long Wall2" parent="Level 1" instance=ExtResource("3_4o7ka")]
-position = Vector2(251, 280)
-rotation = 1.5708
 
 [node name="Limit Wall Y" parent="Level 1" instance=ExtResource("6_sopbf")]
 
@@ -29,8 +20,5 @@ position = Vector2(1152, 0)
 position = Vector2(0, 648)
 
 [node name="Player" parent="." instance=ExtResource("1_h2iuq")]
-position = Vector2(51, 82)
+position = Vector2(53, 76)
 scale = Vector2(1.01915, 0.913413)
-
-[node name="Enemy" parent="." instance=ExtResource("3_lpfqe")]
-position = Vector2(290, 454)

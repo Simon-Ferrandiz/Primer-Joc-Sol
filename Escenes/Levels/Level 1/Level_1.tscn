@@ -1,6 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://cwj3xwgfw2j5"]
+[gd_scene load_steps=6 format=3 uid="uid://cwj3xwgfw2j5"]
 
 [ext_resource type="Texture2D" uid="uid://tpry0gt8ixqq" path="res://Escenes/Levels/Level 1/Background.webp" id="1_xdl2q"]
+[ext_resource type="PackedScene" uid="uid://bw43iy583gpmk" path="res://Escenes/Objects/Enemy/Enemy.tscn" id="2_l6rfo"]
+[ext_resource type="Script" uid="uid://cok3q47sjig4y" path="res://Escenes/Objects/Enemy/EnemyPath.gd" id="2_vdmw0"]
+[ext_resource type="PackedScene" uid="uid://1ftmotal1bms" path="res://Escenes/Objects/Walls/Simple Long Wall.tscn" id="4_idyr2"]
+
+[sub_resource type="Curve2D" id="Curve2D_gjwhl"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 308, 585, 0, 0, 0, 0, 193, 252, 0, 0, 0, 0, 308, 585)
+}
+point_count = 3
 
 [node name="Level 1" type="Sprite2D"]
 
@@ -8,3 +17,35 @@
 position = Vector2(576, 324)
 scale = Vector2(0.6, 0.622478)
 texture = ExtResource("1_xdl2q")
+
+[node name="Enemy1Path" type="Path2D" parent="."]
+curve = SubResource("Curve2D_gjwhl")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Enemy1Path"]
+position = Vector2(308, 585)
+rotation = -0.802063
+rotates = false
+script = ExtResource("2_vdmw0")
+
+[node name="Enemy" parent="Enemy1Path/PathFollow2D" instance=ExtResource("2_l6rfo")]
+rotation = 0.802063
+
+[node name="Simple Long Wall" parent="." instance=ExtResource("4_idyr2")]
+position = Vector2(132, 150)
+
+[node name="Simple Long Wall2" parent="." instance=ExtResource("4_idyr2")]
+position = Vector2(132, 261)
+
+[node name="Simple Long Wall3" parent="." instance=ExtResource("4_idyr2")]
+position = Vector2(381, 498)
+
+[node name="Simple Long Wall4" parent="." instance=ExtResource("4_idyr2")]
+position = Vector2(511, 368)
+rotation = 1.5708
+
+[node name="Simple Long Wall5" parent="." instance=ExtResource("4_idyr2")]
+position = Vector2(641, 367)
+
+[node name="Simple Long Wall6" parent="." instance=ExtResource("4_idyr2")]
+position = Vector2(771, 368)
+rotation = 1.5708

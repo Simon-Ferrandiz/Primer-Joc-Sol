@@ -1,27 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://bw43iy583gpmk"]
+[gd_scene load_steps=3 format=3 uid="uid://bw43iy583gpmk"]
 
 [ext_resource type="Texture2D" uid="uid://fc4hsjn7w82i" path="res://Escenes/Objects/Enemy/Enemy.webp" id="1_g68d2"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gg45i"]
-size = Vector2(54.5, 192)
-
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gg45i"]
-radius = 54.0
-height = 192.0
+radius = 33.0
+height = 122.0
 
 [node name="Enemy" type="CharacterBody2D"]
 
-[node name="Enemy WALL Hitbox" type="CollisionShape2D" parent="."]
-position = Vector2(-2.5, 0)
-scale = Vector2(2, 1)
-shape = SubResource("RectangleShape2D_gg45i")
-
 [node name="Enemy Sprite" type="Sprite2D" parent="."]
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.06, 0.06)
 texture = ExtResource("1_g68d2")
 
-[node name="Eemy Kill Zone" type="Area2D" parent="."]
-
-[node name="Enemy Kill Hitbox" type="CollisionShape2D" parent="Eemy Kill Zone"]
-position = Vector2(-3, 0)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 3)
 shape = SubResource("CapsuleShape2D_gg45i")
