@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://b12yprtwxl8r4"]
+
+[ext_resource type="Texture2D" uid="uid://c5xq6p3w42q7q" path="res://Escenes/Objects/End/VentTexture.jpg" id="1_iqske"]
+[ext_resource type="Texture2D" uid="uid://bq6o5uc08wy1j" path="res://Escenes/Objects/End/Exit.png" id="3_qyqkt"]
+
+[sub_resource type="GDScript" id="GDScript_gqgag"]
+script/source = "extends Area2D
+
+var escala_final = Vector2(500,500)
+
+func _on_body_entered(body: CharacterBody2D) -> void:
+	set_scale(escala_final)
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iqske"]
+size = Vector2(360, 360)
+
+[node name="END" type="Sprite2D"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_iqske")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = SubResource("GDScript_gqgag")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-9.53674e-06, 0)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_iqske")
+
+[node name="Exit" type="Sprite2D" parent="."]
+position = Vector2(-40, 340)
+rotation = -0.785398
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_qyqkt")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

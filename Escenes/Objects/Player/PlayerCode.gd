@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var v := 150
+var v := 175
 
 func _ready() -> void:
 	position = Vector2(50,75)
